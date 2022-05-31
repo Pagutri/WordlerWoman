@@ -1,0 +1,22 @@
+{
+  "name": "wordlerwoman",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pagutri/WordlerWoman.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pagutri/WordlerWoman/issues"
+  },
+  "homepage": "https://github.com/Pagutri/WordlerWoman#readme"
+}
