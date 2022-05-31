@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/Pagutri/WordlerWoman/issues"
   },
-  "homepage": "https://github.com/Pagutri/WordlerWoman#readme"
+  "homepage": "https://github.com/Pagutri/WordlerWoman#readme",
+  "dependencies": {
+    "jest": "^28.1.0"
+  }
 }
