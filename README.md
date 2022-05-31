@@ -13,4 +13,4 @@ Es un juego que consiste en adivinar una palabra por eliminación, se usará  un
 
 Jest - dependencia para realizar pruebas unitarias 
 
-Para instalar se usa el comando __npm install –save-dev jest__
+Para instalar se usa el comando __npm install –-save-dev jest__
