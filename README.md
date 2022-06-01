@@ -14,3 +14,11 @@ Es un juego que consiste en adivinar una palabra por eliminación, se usará  un
 Jest - dependencia para realizar pruebas unitarias 
 
 Para instalar se usa el comando __npm install –-save-dev jest__
+
+eslint - 
+
+__npm install eslint –save-dev__
+
+Configurar esLint
+
+__npm init @eslint/config__
