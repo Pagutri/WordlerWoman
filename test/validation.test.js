@@ -27,10 +27,11 @@ describe("Validation test", () => {
   });
 
 
+  /*
   test("6. Validation method wordCoincidences: Posición correcta", () => {
     const User = "lilos";
     const API = "hilos";
     const answer = Validation.wordCoincidences(API, User);
     expect(answer).toBe(`Letra:  ${letterAPI} en Posicion Correcta: ${positionAPI}`);
-  });
-});
+  });*/
+}); 
