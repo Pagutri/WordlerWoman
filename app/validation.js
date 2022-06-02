@@ -22,18 +22,19 @@ class Validation {
     arrAPI.forEach((letterAPI) => {
       positionAPI = positionAPI + 1;
       positionUser = 0;
-      arrUser.forEach((letterUser) => {
-        positionUser = positionUser + 1;
+    arrUser.forEach((letterUser) => {
+      positionUser = positionUser + 1;  
         if (letterAPI == letterUser) {
-          if (positionAPI === positionUser) {
-            return console.log(
-              `Letra:  ${letterAPI} en Posicion Correcta: ${positionAPI}`
-            );
-          } else {
-            return console.log("La palabra tiene la letra " + letterAPI);
+          if (positionAPI !== positionUser) {
+            return console.log(`Letra:  ${letterUser.toUpperCase()} esta en Posición Incorrecta`);
           }
-        } else {
-          return console.log("No contiene las letra");
+          else if (positionAPI == positionUser) {
+            return console.log(
+              `Letra:  ${letterUser.toUpperCase()} esta en Posicion Correcta: ${positionAPI}`
+            );
+          } else if (letterAPI !== letterUser){
+            return console.log(`La palabra no contiene la letra ${letterAPI.toUpperCase()}`);
+          }
         }
       });
     });
@@ -41,3 +42,7 @@ class Validation {
 }
 
 module.exports = Validation;
+
+
+
+
