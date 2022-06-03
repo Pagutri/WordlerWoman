@@ -19,25 +19,28 @@ class Validation {
     const arrAPI = API.split("");
     var positionAPI = 0;
     var positionUser = 0;
+    var matrizWord = [0, 0, 0, 0, 0];
     arrAPI.forEach((letterAPI) => {
       positionAPI = positionAPI + 1;
       positionUser = 0;
-    arrUser.forEach((letterUser) => {
-      positionUser = positionUser + 1;  
+      arrUser.forEach((letterUser) => {
+        positionUser = positionUser + 1;
         if (letterAPI == letterUser) {
-          if (positionAPI !== positionUser) {
-            return console.log(`Letra:  ${letterUser.toUpperCase()} esta en Posición Incorrecta`);
-          }
-          else if (positionAPI == positionUser) {
+          if (positionAPI === positionUser) {
+            matrizWord[positionAPI - 1] = 2;
             return console.log(
-              `Letra:  ${letterUser.toUpperCase()} esta en Posicion Correcta: ${positionAPI}`
+              `Letra:  ${letterAPI} en Posicion Correcta: ${positionAPI}`
             );
-          } else if (letterAPI !== letterUser){
-            return console.log(`La palabra no contiene la letra ${letterAPI.toUpperCase()}`);
+          } else {
+            matrizWord[positionAPI - 1] = 1;
+            return console.log("La palabra tiene la letra " + letterAPI);
           }
+        } else {
+          return console.log("No contiene las letra");
         }
       });
     });
+    return matrizWord;
   }
 }
 
