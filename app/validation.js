@@ -19,6 +19,7 @@ class Validation {
     const arrAPI = API.split("");
     var positionAPI = 0;
     var positionUser = 0;
+    var matrizWord = [0, 0, 0, 0, 0];
     arrAPI.forEach((letterAPI) => {
       positionAPI = positionAPI + 1;
       positionUser = 0;
@@ -26,9 +27,11 @@ class Validation {
       positionUser = positionUser + 1;  
         if (letterAPI == letterUser) {
           if (positionAPI !== positionUser) {
+            matrizWord[positionUser - 1] = 1;
             return console.log(`Letra:  ${letterUser.toUpperCase()} esta en Posición Incorrecta`);
           }
           else if (positionAPI == positionUser) {
+            matrizWord[positionUser - 1] = 2;
             return console.log(
               `Letra:  ${letterUser.toUpperCase()} esta en Posicion Correcta: ${positionAPI}`
             );
@@ -38,6 +41,7 @@ class Validation {
         }
       });
     });
+    return matrizWord;
   }
 }
 
