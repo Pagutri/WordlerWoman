@@ -22,3 +22,10 @@ __npm install eslint –save-dev__
 Configurar esLint
 
 __npm init @eslint/config__
+
+
+APIS EXTERNAS POSIBLES:
+
+https://rapidapi.com/dpventures/api/wordsapi/
+
+https://clientes.api.greenborn.com.ar/public-random-word?c=1&l=5
