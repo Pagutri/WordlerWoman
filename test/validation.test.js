@@ -25,8 +25,16 @@ describe("Validation test", () => {
     const answer = Validation.wordValidation(API, User);
     expect(answer).toBe("Acertaste");
   });
-
-
+ 
+  test("5. Validation method wordCoincidences: Arreglo de 5 caracteres", () => {
+    const User = "lilos";
+    const API = "hilos";
+    const answer = Validation.wordCoincidences(API, User);
+    if(User.length<5||API.length<5)
+      {
+        expect(answer).toBe("Longitud incorrecta");
+      } 
+  });
   /*
   test("6. Validation method wordCoincidences: Posición correcta", () => {
     const User = "lilos";
