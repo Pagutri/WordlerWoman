@@ -8,4 +8,10 @@ describe("API test", () => {
     expect(word).toBe('Patio');
   });  
 
+  test("2. Save word:",  async () => {
+    await wordAPI.saveWord();
+    var word = wordAPI.wordObtained;
+    expect(word).toBe('Patio');
+  });  
+
 });
