@@ -19,6 +19,12 @@ eslint -
 
 __npm install eslint –save-dev__
 
+cross-fetch
+
+__npm install --save cross-fetch__
+
+ [Dependencia cross-fetch](https://www.npmjs.com/package/cross-fetch)
+
 Configurar esLint
 
 __npm init @eslint/config__
