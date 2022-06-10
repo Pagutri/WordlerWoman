@@ -12,12 +12,11 @@ class wordAPI {
     };
     //guardo esa palabra
     static saveWord(word){       
-        this.wordObtained = word;
+        this.wordObtained = word;      
     }  
 
-
 //metodotest para ver funcionamiento de api
-    static  fetchWordAPI(){
+    static async fetchWordAPI(){
         const urlWordRandom = "https://clientes.api.greenborn.com.ar/public-random-word?c=1&l=5";
         fetch(urlWordRandom).then((res)=>{
             if (res.status != "200") {//200 = exito si es distinto hay error
@@ -25,14 +24,19 @@ class wordAPI {
             }
             else
             {
-                console.log(res);//visualizar en consola que me trae el Response de la api externa en su respuesta              
+              console.log(res);//visualizar en consola que me trae el Response de la api externa en su respuesta              
                 return res.json();
             }
         }).then((data)=>{
-        console.log(data);//imprime prueba
+       console.log(data);//imprime prueba
         //wordAPI.saveWord(data);  
-        })
+        })     
     };
+//metodotest para ver funcionamiento de api
+    static async getWordAPItest(){
+        const dataWord= await wordAPI.fetchWordAPI();     
+        return dataWord;
+    }
 
 }
 module.exports = wordAPI
