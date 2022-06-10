@@ -14,10 +14,7 @@ class wordAPI {
     static saveWord(word){       
         this.wordObtained = word;
     }  
-//metodo para probar funcionamiento, se borrará
-    static async getWordSaved(){
-        return await fetch("https://clientes.api.greenborn.com.ar/public-random-word?c=1&l=5")
-    }
+
 }
 module.exports = wordAPI
 
